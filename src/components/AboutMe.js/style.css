@@ -1,0 +1,15 @@
+.dn-about-me-bg{
+  padding-top: 50px;
+  background-size: 100% 100%;
+}
+
+.dn-about-me{
+  height: 100%;
+  margin: auto;
+}
+
+.dn-about-me-img{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
