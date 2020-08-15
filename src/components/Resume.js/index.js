@@ -70,7 +70,7 @@ const Resume = () => {
           <div className='m-2 dn-resume-card hoverable p-md-3'>
             <div className='row'>
               <h4 className='col-md-9'>Blessing Central Hotel</h4>
-              <p className='col-md-3'>Ho Chi Minh City, Vietnam</p>
+              <p className='col-md-3'>New Orleans, LA</p>
             </div>
 
             <div className='row'>
