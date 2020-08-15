@@ -44,8 +44,12 @@
 }
 
 .dn-carousel-inner{
-  width: 78%;
+  width: 78% !important;
   margin: auto;
+}
+
+.carousel-inner{
+  width: 78% !important;
 }
 
 .netflix-bg{
