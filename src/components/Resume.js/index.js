@@ -5,7 +5,7 @@ const Resume = () => {
   return (
     <div id='resume'>
       <h1 className='dn-resume-head'>RESUME</h1>
-      <div className='container text-left' style={{'paddingLeft':'20px', 'paddingRight':'20px;'}}>
+      <div className='container text-left' style={{'paddingLeft':'20px', 'paddingRight':'20px'}}>
         <div className='dn-portfolio-underline1'></div>
         <div style={{ 'height': '5px' }}></div>
         <div className='dn-portfolio-underline2'></div>

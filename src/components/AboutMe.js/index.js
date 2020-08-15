@@ -1,7 +1,7 @@
 import React from 'react'
 import './style.css'
 import { MDBRow, MDBCol, MDBView, MDBMask, MDBBtn } from 'mdbreact'
-import { Link, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
+import {scroller } from 'react-scroll'
 
 const AboutMe = () => {
   const scrollToResume = (e) => {
