@@ -5,6 +5,7 @@
 
 .dn-footer-head{
   transition: 0.5s ease;
+  display: inline-block;
 }
 
 .dn-footer-head:hover{

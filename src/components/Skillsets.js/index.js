@@ -11,17 +11,17 @@ const Skillsets = () => {
           <MDBCol lg='3'>
             <i className="fab fa-internet-explorer dn-skill-web"></i>
             <h5 className='mt-2'><strong>Web development</strong></h5>
-            <p><strong>Create websites with MERN stack</strong></p>
+            <p><strong>Create fullstack websites with MERN stack</strong></p>
           </MDBCol>
           <MDBCol lg='3'>
             <i className="fab fa-docker dn-skill-docker"></i>
             <h5 className='mt-2'><strong>Docker</strong></h5>
-            <p><strong>Deploy softwares in package with Docker</strong></p>
+            <p><strong>Deploy softwares in lightweight packages with Docker</strong></p>
           </MDBCol>
           <MDBCol lg='3'>
             <i className="fas fa-clipboard-check dn-skill-test"></i>
             <h5 className='mt-2'><strong>Code review</strong></h5>
-            <p><strong>Run test cases and document codes</strong></p>
+            <p><strong>Run test cases with Java Unit Tests and document codes</strong></p>
           </MDBCol>
           <MDBCol lg='3'>
             <i className="fab fa-github dn-skill-github"></i>
