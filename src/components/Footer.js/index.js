@@ -31,7 +31,7 @@ const Footer = () => {
                 <i className="fas fa-map-marker"></i>  Visit Me:
             </p>
               <p className='dn-contact-infor'>US: 6823 St Charles Ave, New Orleans, LA 70118</p>
-              <p className='dn-contact-infor'>VN: 267 Le Thanh Ton St, Dist. 1, Ho Chi Minh City, 70000</p>
+              <p className='dn-contact-infor'>VN: 267 Le Thanh Ton Stt, Dist. 1, Ho Chi Minh City, 70000</p>
             </div>
           </div>
         </div>
