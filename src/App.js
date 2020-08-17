@@ -8,9 +8,9 @@ import 'mdbreact/dist/css/mdb.css';
 import Header from './components/Header.js/index'
 import Footer from './components/Footer.js/index'
 import AboutMe from './components/AboutMe.js/index'
-import Contact from './components/Contact.js/index'
+
 import Home from './components/Home.js/index'
-import Portfolios from './components/Portfolios.js'
+// import Portfolios from './components/Portfolios.js'
 
 
 function App() {
@@ -19,8 +19,8 @@ function App() {
       <Header></Header>
       <Home></Home>
       <AboutMe></AboutMe>
-      <Portfolios></Portfolios>
-      <Contact></Contact>
+      {/* <Portfolios></Portfolios> */}
+      
       <Footer></Footer>
     </div>
   );

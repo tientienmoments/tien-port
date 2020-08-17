@@ -1,15 +1,48 @@
-.dn-about-me-bg{
-  padding-top: 50px;
-  background-size: 100% 100%;
+.tien-about-style{
+  /* margin-top: 20px; */
+  max-width:100%;
+  height: 100vh;
+}
+.carousel .carousel-indicators li {
+  width: 20px;
+  height: 20px;
+  border: 0px;
+  background-color: black;
+  /* margin-top: 10px; */
+  color: black;
 }
 
-.dn-about-me{
-  height: 100%;
-  margin: auto;
-}
-
-.dn-about-me-img{
+.tien-about-center{
   display: flex;
-  flex-direction: column;
   justify-content: center;
+  
 }
+
+.tien-about-page{
+  position: relative;
+  z-index: 0;
+  border: 1px solid red;
+  width: 50%;
+  padding:0;
+}
+
+.tien-header{
+  position: absolute;
+  z-index: 2;
+  border: 1px solid red;
+  width:100%;
+  text-align: center;
+}
+.tien-avatar{
+  position: absolute;
+  z-index:2;
+  margin-top: 50px;
+  
+}
+.tien-body{
+  position: absolute;
+  z-index:1;
+  
+}
+
+

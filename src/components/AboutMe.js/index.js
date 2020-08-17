@@ -1,32 +1,64 @@
 import React from 'react'
 import './style.css'
-import { MDBRow, MDBCol, MDBView, MDBMask, MDBBtn } from 'mdbreact'
-import {scroller } from 'react-scroll'
+import { MDBCarousel, MDBCarouselInner, MDBCarouselItem, MDBView } from
+  "mdbreact";
+import { Row } from "react-bootstrap"
+
+import Skills from "../../images/skills.png";
+import General from "../../images/tien-back.png"
+import Avatar from "../../images/tien-avatar.png"
 
 const AboutMe = () => {
-  
+
 
   return (
-    <div id="aboutme" className='dn-about-me-bg'>
-      <div className='container row dn-about-me mt-5'>
-        <MDBRow className='text-left mb-5'>
-          <MDBCol lg="5" className='dn-about-me-img'>
-            <MDBView className="rounded z-depth-2 mb-lg-0 mb-4" hover waves>
-              <img className="img-fluid" src="https://c1.wallpaperflare.com/preview/480/45/109/book-business-can-designer.jpg" alt="" />
-              <a href="#!"><MDBMask overlay="white-slight" /></a>
-            </MDBView>
-          </MDBCol>
 
-          <MDBCol lg="7">
-            <h1 className="font-weight-bold mb-3 p-0 about-me-head"><strong>ABOUT ME</strong></h1>
-            <h5>Aspiring Software Engineer actively looking for Internship</h5>
-            <p>As an Computer Science student who urges to become a Software Engineer who can deliver meaningful products, I am passionate in doing and learning more about Web Development and Data Science since their combination makes a huge positive impacts on people's lives across many industries, particularly Healthcare and E-commerce.<br/><br/>Personally, I am a motivated and responsible person who can handle pressure, adapts to a new environment, and attempt to learn more.</p>
+    <MDBCarousel
+      id='aboutme'
+      activeItem={1}
+      length={3}
+      showControls={true}
+      showIndicators={true}
+      className="z-depth-1 tien-about-style"
+    >
+      <MDBCarouselInner style={{ marginTop: "10px" }}>
+        <MDBCarouselItem itemId="1">
+          <MDBView >
+            <div className="d-flex justify-content-center">
+              <h1 className="tien-header">about me</h1>
+              <Row className="tien-avatar">
+                <img src={Avatar} style={{ height: "30vh" }} />
+              </Row>
+              <img
+                src={General}
+                alt="First slide"
+                className="tien_body"
+              />
+            </div>
 
-           
-          </MDBCol>
-        </MDBRow>
-      </div>
-    </div>
+          </MDBView>
+        </MDBCarouselItem>
+        <MDBCarouselItem itemId="2">
+          <MDBView >
+            <div className="d-flex justify-content-center" >
+              <h1 className="tien-header" >Skills</h1>
+              <img
+                src={Skills}
+                alt="Second slide"
+                className="tien_body"
+                style={{ height: "100vh" }}
+              />
+            </div>
+          </MDBView>
+        </MDBCarouselItem>
+        <MDBCarouselItem itemId="3">
+          <MDBView>
+            <h1>resume</h1>
+          </MDBView>
+        </MDBCarouselItem>
+      </MDBCarouselInner>
+    </MDBCarousel>
+
   )
 }
 

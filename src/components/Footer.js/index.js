@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <div className='dn-footer-bg text-white'>
       <h1 className='dn-footer-head'>Contact</h1>
-      <p>If you need any further information and request, please contact me</p>
+      {/* <p>If you need any further information and request, please contact me</p>
 
       <div className='container dn-footer-container row m-auto'>
         <div className='dn-contact-lst col-md-6'>
@@ -50,7 +50,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <p>© Copyright <strong className='dn-license'>DungNgo-Portfolio 2020</strong>. All Rights Reserve</p>
+      <p>© Copyright <strong className='dn-license'>DungNgo-Portfolio 2020</strong>. All Rights Reserve</p> */}
     </div>
   )
 }

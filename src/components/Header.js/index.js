@@ -48,7 +48,7 @@ const Header = () => {
         <Link
           className="menu-item"
           activeClass="active" to="aboutme"
-          spy={true} smooth={true} offset={-200}
+          spy={true} smooth={true} offset={-50}
           duration={600} style={{ fontSize: "17px", color: "white" }}
           onSetActive={(e) => handleSetActive(e)}>Resume
             </Link>
