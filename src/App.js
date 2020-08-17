@@ -11,8 +11,7 @@ import AboutMe from './components/AboutMe.js/index'
 import Contact from './components/Contact.js/index'
 import Home from './components/Home.js/index'
 import Portfolios from './components/Portfolios.js'
-import Resume from './components/Resume.js/index'
-import Skillsets from './components/Skillsets.js/index'
+
 
 function App() {
   return (
@@ -20,8 +19,6 @@ function App() {
       <Header></Header>
       <Home></Home>
       <AboutMe></AboutMe>
-      <Skillsets></Skillsets>
-      <Resume></Resume>
       <Portfolios></Portfolios>
       <Contact></Contact>
       <Footer></Footer>

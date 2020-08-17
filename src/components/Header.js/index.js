@@ -1,8 +1,7 @@
 import React, { useEffect } from 'react'
-import { Navbar, Nav, Button } from 'react-bootstrap'
-import { MDBNavbar, MDBBtn } from 'mdbreact'
+import { MDBNavbar,} from 'mdbreact'
 import './style.css'
-
+import {Navbar} from "react-bootstrap"
 import { Link, Events, animateScroll as scroll, scrollSpy } from 'react-scroll'
 
 const Header = () => {
@@ -16,9 +15,9 @@ const Header = () => {
     scrollSpy.update();
   }, [])
 
-  const scrollToTop = () => {
-    scroll.scrollToTop();
-  }
+  // const scrollToTop = () => {
+  //   scroll.scrollToTop();
+  // }
 
   const scrollToBottom = () => {
     scroll.scrollToBottom();
@@ -28,67 +27,69 @@ const Header = () => {
   }
 
   return (
-    <MDBNavbar color="bg-dark" fixed="top" dark expand="lg" scrolling transparent>
-      <div className='container'>
-        <Button variant='link' className='p-0'>
-          <Navbar.Brand onClick={() => scrollToTop()} style={{ 'color': 'orange' }} className='dn-signature'>Dung Ngo's</Navbar.Brand>
-        </Button>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+    <MDBNavbar color="bg-light" fixed="top"  dark scrolling transparent >
+      <Navbar className="menu" expand="md"  >
 
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="ml-auto dn-collapse-nav dn-collapse">
-            <Link
-              className='nav-link active'
-              activeClass="" to="home"
-              spy={true} smooth={true} offset={-100}
-              duration={600} style={{ 'color': 'white' }}
-              onSetActive={(e) => handleSetActive(e)}>Home
+        <input type="checkbox" href="#" className="menu-open" name="menu-open" id="menu-open" />
+        <label className="menu-open-button" for="menu-open">
+          <span className="hamburger hamburger-1"></span>
+          <span className="hamburger hamburger-2"></span>
+          <span className="hamburger hamburger-3"></span>
+        </label>
+
+
+        <Link
+          className="menu-item"
+          activeClass="" to="home"
+          spy={true} smooth={true} offset={-100}
+          duration={600} style={{ fontSize: "17px", color: "white" }}
+          onSetActive={(e) => handleSetActive(e)}>Home
+            </Link>
+        <Link
+          className="menu-item"
+          activeClass="active" to="aboutme"
+          spy={true} smooth={true} offset={-200}
+          duration={600} style={{ fontSize: "17px", color: "white" }}
+          onSetActive={(e) => handleSetActive(e)}>Resume
+            </Link>
+        <Link
+          className="menu-item"
+          activeClass="active" to="portfolios"
+          spy={true} smooth={true} offset={-100}
+          duration={600} style={{ fontSize: "17px", color: "white" }}
+          onSetActive={(e) => handleSetActive(e)}>Projects
             </Link>
 
-            <Link
-              className='nav-link'
-              activeClass="active" to="aboutme"
-              spy={true} smooth={true} offset={-200}
-              duration={600} style={{ 'color': 'white' }}
-              onSetActive={(e) => handleSetActive(e)}>About me
+        <Link
+          className="menu-item"
+          activeClass="active" to="portfolios"
+          spy={true} smooth={true} offset={-100}
+          duration={600} style={{ fontSize: "17px", color: "white" }}
+          onClick={() => scrollToBottom()}>Contacts
             </Link>
 
-            <Link
-              className='nav-link'
-              activeClass="active" to="skillsets"
-              spy={true} smooth={true} offset={-200}
-              duration={600} style={{ 'color': 'white' }}
-              onSetActive={(e) => handleSetActive(e)}>Skillsets
-            </Link>
 
-            <Link
-              className='nav-link'
-              activeClass="active" to="resume"
-              spy={true} smooth={true} offset={-100}
-              duration={600} style={{ 'color': 'white' }}
-              onSetActive={(e) => handleSetActive(e)}>Resume
-            </Link>
+      </Navbar>
+      <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+        <defs>
+          <filter id="shadowed-goo">
 
-            <Link
-              className='nav-link'
-              activeClass="active" to="portfolios"
-              spy={true} smooth={true} offset={-100}
-              duration={600} style={{ 'color': 'white' }}
-              onSetActive={(e) => handleSetActive(e)}>Projects
-            </Link>
+            <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10" />
+            <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+            <feGaussianBlur in="goo" stdDeviation="3" result="shadow" />
+            <feColorMatrix in="shadow" mode="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 1 -0.2" result="shadow" />
+            <feOffset in="shadow" dx="1" dy="1" result="shadow" />
+            <feComposite in2="shadow" in="goo" result="goo" />
+            <feComposite in2="goo" in="SourceGraphic" result="mix" />
+          </filter>
+          <filter id="goo">
+            <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10" />
+            <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+            <feComposite in2="goo" in="SourceGraphic" result="mix" />
+          </filter>
+        </defs>
+      </svg>
 
-            <Link
-              className='nav-link'
-              activeClass="active" to="contact"
-              spy={true} smooth={true} offset={-100}
-              duration={600} style={{ 'color': 'white' }}
-              onSetActive={(e) => handleSetActive(e)}>Email me
-            </Link>
-
-            <MDBBtn onClick={() => scrollToBottom()} color='amber' className='btn-contact'>Contact</MDBBtn>
-          </Nav>
-        </Navbar.Collapse>
-      </div>
     </MDBNavbar>
   )
 }
