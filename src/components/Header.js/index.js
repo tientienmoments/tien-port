@@ -42,21 +42,21 @@ const Header = () => {
           className="menu-item"
           activeClass="" to="home"
           spy={true} smooth={true} offset={-100}
-          duration={600} style={{ fontSize: "17px", color: "white" }}
+          duration={600} style={{ fontSize: "15px", color: "white" }}
           onSetActive={(e) => handleSetActive(e)}>Home
             </Link>
         <Link
           className="menu-item"
           activeClass="active" to="aboutme"
           spy={true} smooth={true} offset={-50}
-          duration={600} style={{ fontSize: "17px", color: "white" }}
+          duration={600} style={{ fontSize: "15px", color: "white" }}
           onSetActive={(e) => handleSetActive(e)}>Resume
             </Link>
         <Link
           className="menu-item"
           activeClass="active" to="portfolios"
           spy={true} smooth={true} offset={-100}
-          duration={600} style={{ fontSize: "17px", color: "white" }}
+          duration={600} style={{ fontSize: "15px", color: "white" }}
           onSetActive={(e) => handleSetActive(e)}>Projects
             </Link>
 
@@ -64,7 +64,7 @@ const Header = () => {
           className="menu-item"
           activeClass="active" to="portfolios"
           spy={true} smooth={true} offset={-100}
-          duration={600} style={{ fontSize: "17px", color: "white" }}
+          duration={600} style={{ fontSize: "15px", color: "white" }}
           onClick={() => scrollToBottom()}>Contacts
             </Link>
 
