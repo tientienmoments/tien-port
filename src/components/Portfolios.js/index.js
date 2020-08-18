@@ -2,7 +2,6 @@ import React from 'react'
 import './style.css'
 import { Row } from "react-bootstrap"
 import PropagateLoader from "react-spinners/PropagateLoader";
-import { Link } from "react-router-link"
 import Macbook1 from "../../images/macbook1.png"
 import Macbook2 from "../../images/macbook2.png"
 import Macbook3 from "../../images/macbook3.png"
