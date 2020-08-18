@@ -31,7 +31,7 @@ const AboutMe = () => {
                 <h4> tienNguyen</h4>
               </Row>
               <Row className="tien-quote">
-                <quote>Responsibility at Work - Flexible in Role - Willing to Learn</quote>
+                <quote>Love to Code and Travel - Flexible - Willing to Learn</quote>
               </Row>
               <img
                 src={General}
@@ -66,9 +66,9 @@ const AboutMe = () => {
                 <div className="direction-l">
                   <div className="flag-wrapper">
                     <span className="flag">STUDYING FULL STACK DEVELOPER</span>
-                    <span className="time-wrapper"><span className="time">CODERSCHOOL|7/2020 - present</span></span>
+                    <span className="time-wrapper"><span className="time">CODERSCHOOL|6/2020 - present</span></span>
                   </div>
-                  <div className="desc">Retouching picture follow the action by photoshop</div>
+                  <div className="desc"></div>
                 </div>
               </li>
 
