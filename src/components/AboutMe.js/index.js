@@ -46,7 +46,7 @@ const AboutMe = () => {
           <MDBView >
             <div className="d-flex justify-content-center" >
               <Row className="d-flex justify-content-end" style={{ height: "50px", width: "500px", marginTop: "350px", position: "absoblute", zIndex: "5", float: "right" }}>
-                <h4>Skills to Advance</h4>
+                <h4>Knowledge in Skill's</h4>
               </Row>
               <img
                 src={Skills}
@@ -65,7 +65,7 @@ const AboutMe = () => {
               <li>
                 <div className="direction-l">
                   <div className="flag-wrapper">
-                    <span className="flag">STUDYING FULL STACK DEVELOPER</span>
+                    <span className="flag">26 Repos</span>
                     <span className="time-wrapper"><span className="time">CODERSCHOOL|6/2020 - present</span></span>
                   </div>
                   <div className="desc"></div>
@@ -76,12 +76,13 @@ const AboutMe = () => {
               <li>
                 <div className="direction-r">
                   <div className="flag-wrapper">
-                    <span className="flag">BAR ATTENTDANT LOUNGE</span>
-                    <span className="time-wrapper"><span className="time">COSTA|2015 - 11/2019</span></span>
+                    <span className="flag">Movie Web App</span>
+                    <span className="time-wrapper"><span className="time">CODERSCHOOL</span></span>
                   </div>
                   <div className="desc">
-                    2 contracts in Houseskeeping<br></br>
-                    3 contracts in Bar services<br></br>
+                    Global movie information which is base on themovieDB.org<br></br>
+                    Using knowledge of Reactjs<br></br>
+                    User can see all the information and watch trailer<br></br>
                   </div>
                 </div>
               </li>
@@ -89,32 +90,38 @@ const AboutMe = () => {
               <li>
                 <div className="direction-l">
                   <div className="flag-wrapper">
-                    <span className="flag">EDITOR</span>
-                    <span className="time-wrapper"><span className="time">2014-2015</span></span>
+                    <span className="flag">Tic Tac Toe Game</span>
+                    <span className="time-wrapper"><span className="time">CODERSCHOOL</span></span>
                   </div>
-                  <div className="desc">Retouching picture follow the action by photoshop</div>
+                  <div className="desc">
+                    Using the basic knowledge of JS<br></br>
+                    Suitable for fun and logic.
+                  </div>
                 </div>
               </li>
 
               <li>
                 <div className="direction-r">
                   <div className="flag-wrapper">
-                    <span className="flag">TOUR'S MARKET RESEARCH</span>
-                    <span className="time-wrapper"><span className="time">VIETTRAVEL|2013-2014</span></span>
+                    <span className="flag">Todo List</span>
+                    <span className="time-wrapper"><span className="time">CODERSCHOOL</span></span>
                   </div>
                   <div className="desc">
-                    Doing the research at the international airport<br></br>
-                    Reporting</div>
+                    Feature Project after weeks of learing HTML/CSS<br></br>
+                    Usefull for planing and reminding myself in mememories</div>
                 </div>
               </li>
 
               <li>
                 <div className="direction-l">
                   <div className="flag-wrapper">
-                    <span className="flag">Graduated Bachelor in English</span>
-                    <span className="time-wrapper"><span className="time">2009-2013</span></span>
+                    <span className="flag">First step in Coding</span>
+                    <span className="time-wrapper"><span className="time">4/2020</span></span>
                   </div>
-
+                  <div className="desc">
+                    Learning the very basic of HTML/CSS on edx.org
+                   
+                    </div>
                 </div>
               </li>
             </ul>
