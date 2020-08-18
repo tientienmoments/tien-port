@@ -80,9 +80,9 @@ const AboutMe = () => {
                     <span className="time-wrapper"><span className="time">CODERSCHOOL</span></span>
                   </div>
                   <div className="desc">
-                    Global movie information which is base on themovieDB.org<br></br>
-                    Using knowledge of Reactjs<br></br>
-                    User can see all the information and watch trailer<br></br>
+                    - Global movie information which is base on themovieDB.org<br></br>
+                    - Using knowledge of Reactjs<br></br>
+                    - User can see all the information and watch trailer<br></br>
                   </div>
                 </div>
               </li>
@@ -94,8 +94,8 @@ const AboutMe = () => {
                     <span className="time-wrapper"><span className="time">CODERSCHOOL</span></span>
                   </div>
                   <div className="desc">
-                    Using the basic knowledge of JS<br></br>
-                    Suitable for fun and logic.
+                    - Using the basic knowledge of JS<br></br>
+                    - Suitable for fun and logic.
                   </div>
                 </div>
               </li>
