@@ -49,5 +49,9 @@
  width: 65vw;
  margin-right: -50px;
  margin-top:0;
+ display: inline-block;
+ margin: 0 0.5rem;
+
 }
+
 /* style={{ width: "60%", position: "relative", zIndex: "3", marginRight: "-40px"  */

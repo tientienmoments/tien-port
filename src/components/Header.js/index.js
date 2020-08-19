@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
-import { MDBNavbar,} from 'mdbreact'
+import { MDBNavbar, } from 'mdbreact'
 import './style.css'
-import {Navbar} from "react-bootstrap"
+import { Navbar } from "react-bootstrap"
 import { Link, Events, animateScroll as scroll, scrollSpy } from 'react-scroll'
 
 const Header = () => {
@@ -27,11 +27,11 @@ const Header = () => {
   }
 
   return (
-    <MDBNavbar color="bg-light" fixed="top"  dark scrolling transparent >
+    <MDBNavbar color="bg-light" fixed="top" dark scrolling transparent >
       <Navbar className="menu" expand="md"  >
 
-        <input type="checkbox" href="#" className="menu-open" name="menu-open" id="menu-open" />
-        <label className="menu-open-button" for="menu-open">
+        <input type="checkbox" href="#" className="menu-open " name="menu-open" id="menu-open" />
+        <label className="menu-open-button " for="menu-open">
           <span className="hamburger hamburger-1"></span>
           <span className="hamburger hamburger-2"></span>
           <span className="hamburger hamburger-3"></span>

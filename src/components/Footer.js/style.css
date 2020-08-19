@@ -1,0 +1,33 @@
+.tien-button {
+    position: relative;
+    width:60px;
+    height:60px;
+    display:block;
+    text-align:center;
+    margin:0 10px;
+    border-radius: 50%;
+    padding: 6px;
+    box-sizing: border-box;
+    text-decoration:none;
+    box-shadow: 0 10px 15px rgba(0,0,0,0.3);
+    background: linear-gradient(0deg,  #E6C6B3);
+    transition: .5s;
+  }
+.tien-button:hover {
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    text-decoration:none;
+  }
+  .tien-spot {
+    width: 100%;
+    height:100%;
+    display:block;
+    background: linear-gradient(0deg, #E6C6B3, #e8dcc2);
+    border-radius: 50%;
+    line-height: calc(60px - 12px);
+    font-size:24px;
+    color: #262626;
+    transition: .5s;
+  }
+  .tien-button-color:nth-child(1) .tien-button:hover .tien-spot{
+    color: #3b5998;
+  }

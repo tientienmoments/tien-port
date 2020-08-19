@@ -19,7 +19,7 @@ const AboutMe = () => {
       length={3}
       showControls={true}
       showIndicators={true}
-      className="z-depth-1 tien-about-style"
+      className="tien-about-style"
     >
       <MDBCarouselInner style={{ marginTop: "10px" }}>
         <MDBCarouselItem itemId="1">

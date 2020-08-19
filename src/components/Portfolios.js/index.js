@@ -29,7 +29,7 @@ const Portfolios = () => {
         </div>
 
         <div className="tien-projects" onClick={() => window.open('https://t-todolist.netlify.app', '_blank')}>
-          <div className="back-macbook" style={{ backgroundColor: "#ACA9BB" }}></div>
+          <div className="back-macbook animate__animated animate__bounce" style={{ backgroundColor: "#ACA9BB" }}></div>
           <img src={Macbook3} className="front-macbook" />
         </div>
 

@@ -13,7 +13,9 @@
   /* margin-top: 10px; */
   color: black;
 }
-
+.carousel-control-prev{
+  color: black !important;
+}
 .tien-about-center{
   display: flex;
   justify-content: center;
