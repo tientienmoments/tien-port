@@ -322,5 +322,16 @@
   z-index: 15;
 }
 
+
+
 }
 
+
+
+.carousel .carousel-control-prev-icon {
+  background-image: url('https://image.flaticon.com/icons/svg/271/271220.svg');
+}
+
+.carousel .carousel-control-next-icon {
+  background-image: url('https://image.flaticon.com/icons/svg/32/32213.svg');
+}
